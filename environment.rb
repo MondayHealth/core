@@ -1,4 +1,4 @@
-ENV['DATABASE_URL'] ||= 'postgres://localhost/crawler'
+raise "Missing DATABASE_URL environment variable" if ENV['DATABASE_URL'].empty?
 
 require 'otr-activerecord'
 
