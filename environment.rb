@@ -1,3 +1,5 @@
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "lib"))
+
 raise "Missing DATABASE_URL environment variable" if ENV['DATABASE_URL'].to_s.empty?
 
 require 'otr-activerecord'
