@@ -1,4 +1,4 @@
-raise "Missing DATABASE_URL environment variable" if ENV['DATABASE_URL'].empty?
+raise "Missing DATABASE_URL environment variable" if ENV['DATABASE_URL'].to_s.empty?
 
 require 'otr-activerecord'
 
