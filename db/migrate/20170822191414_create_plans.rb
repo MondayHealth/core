@@ -1,4 +1,4 @@
-class CreatePlans < ActiveRecord::Migration[5.0]
+class CreatePlans < ActiveRecord::Migration[5.1]
   def change
     create_table :plans do |t|
       t.integer :provider_id, null: false
