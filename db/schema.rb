@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170825191544) do
+ActiveRecord::Schema.define(version: 20170825194436) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20170825191544) do
     t.string "address", null: false
     t.string "phone", null: false
     t.text "specialties", null: false
+    t.integer "doctor_id"
     t.index ["first_name", "last_name", "provider_id"], name: "first_last_provider_id", unique: true
   end
 
