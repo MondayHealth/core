@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20170825145810) do
     t.string "license", null: false
     t.string "address", null: false
     t.string "phone", null: false
+    t.text "specialties", null: false
     t.index ["first_name", "last_name", "provider_id"], name: "first_last_provider_id", unique: true
   end
 
