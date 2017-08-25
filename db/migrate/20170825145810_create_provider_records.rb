@@ -9,6 +9,7 @@ class CreateProviderRecords < ActiveRecord::Migration[5.1]
       t.string :address, null: false
       t.string :phone, null: false
       t.text :specialties, null: false
+      t.timestamps
     end
 
     add_index :provider_records, [:first_name, :last_name, :provider_id], name: 'first_last_provider_id', unique: true

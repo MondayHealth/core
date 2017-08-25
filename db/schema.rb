@@ -58,11 +58,13 @@ ActiveRecord::Schema.define(version: 20170825195901) do
     t.string "address", null: false
     t.string "phone", null: false
     t.text "specialties", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.integer "doctor_id"
     t.index ["first_name", "last_name", "provider_id"], name: "first_last_provider_id", unique: true
   end
 
-  create_table "providers", id: :serial, force: :cascade do |t|
+  create_table "providers", force: :cascade do |t|
     t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
