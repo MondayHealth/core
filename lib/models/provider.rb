@@ -1,4 +1,4 @@
 class Provider < ActiveRecord::Base
-  has_many :plans
-  has_many :provider_records
+  has_many :plans, dependent: :destroy
+  has_many :provider_records, dependent: :destroy
 end
