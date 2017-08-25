@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170825195241) do
+ActiveRecord::Schema.define(version: 20170825195631) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20170825195241) do
   create_table "doctors_specialties", force: :cascade do |t|
     t.integer "doctor_id"
     t.integer "specialty_id"
+    t.index ["doctor_id", "specialty_id"], name: "index_doctors_specialties_on_doctor_id_and_specialty_id", unique: true
   end
 
   create_table "locations", force: :cascade do |t|
