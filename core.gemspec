@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'core'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2017-08-23'
   s.summary     = 'Shared repository for models and migrations.'
   s.authors     = ['Ben Jackson']
