@@ -1,8 +1,8 @@
 class ProviderRecord < ActiveRecord::Base
+  belongs_to :payor
   belongs_to :provider
-  belongs_to :doctor
 
-  validates_presence_of :provider
+  validates_presence_of :payor
   validates_presence_of :accepted_plan_ids
   validates_presence_of :first_name
   validates_presence_of :last_name

@@ -15,42 +15,34 @@ ActiveRecord::Schema.define(version: 20170901172033) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "doctors", force: :cascade do |t|
-    t.string "first_name", null: false
-    t.string "last_name", null: false
-    t.string "license", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["first_name", "last_name", "license"], name: "index_doctors_on_first_name_and_last_name_and_license", unique: true
-  end
-
-  create_table "doctors_specialties", force: :cascade do |t|
-    t.integer "doctor_id"
-    t.integer "specialty_id"
-    t.index ["doctor_id", "specialty_id"], name: "index_doctors_specialties_on_doctor_id_and_specialty_id", unique: true
-  end
-
   create_table "locations", force: :cascade do |t|
-    t.integer "doctor_id", null: false
+    t.integer "provider_id", null: false
     t.string "address", null: false
     t.string "phone", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["doctor_id", "address"], name: "index_locations_on_doctor_id_and_address", unique: true
+    t.index ["provider_id", "address"], name: "index_locations_on_provider_id_and_address", unique: true
+  end
+
+  create_table "payors", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_payors_on_name", unique: true
   end
 
   create_table "plans", force: :cascade do |t|
-    t.integer "provider_id", null: false
+    t.integer "payor_id", null: false
     t.string "name", null: false
     t.text "url", null: false
     t.integer "record_limit", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["provider_id", "name"], name: "index_plans_on_provider_id_and_name", unique: true
+    t.index ["payor_id", "name"], name: "index_plans_on_payor_id_and_name", unique: true
   end
 
   create_table "provider_records", force: :cascade do |t|
-    t.integer "provider_id", null: false
+    t.integer "payor_id", null: false
     t.string "accepted_plan_ids", null: false
     t.string "first_name", null: false
     t.string "last_name", null: false
@@ -60,15 +52,23 @@ ActiveRecord::Schema.define(version: 20170901172033) do
     t.text "specialties", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "doctor_id"
-    t.index ["first_name", "last_name", "provider_id"], name: "first_last_provider_id", unique: true
+    t.integer "provider_id"
+    t.index ["first_name", "last_name", "payor_id"], name: "first_last_payor_id", unique: true
   end
 
   create_table "providers", force: :cascade do |t|
-    t.string "name", null: false
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.string "license", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_providers_on_name", unique: true
+    t.index ["first_name", "last_name", "license"], name: "index_providers_on_first_name_and_last_name_and_license", unique: true
+  end
+
+  create_table "providers_specialties", force: :cascade do |t|
+    t.integer "provider_id"
+    t.integer "specialty_id"
+    t.index ["provider_id", "specialty_id"], name: "index_providers_specialties_on_provider_id_and_specialty_id", unique: true
   end
 
   create_table "specialties", force: :cascade do |t|
