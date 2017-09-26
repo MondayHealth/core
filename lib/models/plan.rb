@@ -1,3 +1,3 @@
 class Plan < ActiveRecord::Base
-  belongs_to :provider
+  belongs_to :payor
 end
