@@ -1,6 +1,6 @@
 class ProviderRecord < ActiveRecord::Base
   belongs_to :payor
-  belongs_to :doctor
+  belongs_to :provider
 
   validates_presence_of :payor
   validates_presence_of :accepted_plan_ids
