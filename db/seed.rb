@@ -12,3 +12,11 @@ Dir[File.join("db/seed/payors", "*.json")].each do |file_path|
   end
 end
 
+Dir[File.join("db/seed/directories", "*.json")].each do |file_path|
+  data = JSON.parse(open(file_path).read)
+  data["directories"].each do |directory_data|
+    directory = Directory.where(short_name: directory_data["short_name"]).first_or_initialize
+    directory.name = directory_data["name"]
+    directory.save!
+  end
+end
