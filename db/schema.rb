@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171009184913) do
+ActiveRecord::Schema.define(version: 20171009213041) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20171009184913) do
   create_table "locations", force: :cascade do |t|
     t.integer "provider_id", null: false
     t.string "address", null: false
-    t.string "phone", null: false
+    t.string "phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["provider_id", "address"], name: "index_locations_on_provider_id_and_address", unique: true
