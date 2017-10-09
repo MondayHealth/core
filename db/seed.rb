@@ -1,7 +1,7 @@
 require 'json'
 require_relative '../environment'
 
-Dir[File.join("db/seed", "*.json")].each do |file_path|
+Dir[File.join("db/seed/payors", "*.json")].each do |file_path|
   data = JSON.parse(open(file_path).read)
   payor = Payor.where(name: data["name"]).first_or_create!
   data["plans"].each do |plan_data|
@@ -11,3 +11,4 @@ Dir[File.join("db/seed", "*.json")].each do |file_path|
     plan.save!
   end
 end
+
