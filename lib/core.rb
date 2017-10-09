@@ -1,9 +1,6 @@
 require 'otr-activerecord'
 require 'pg'
 
-require 'models/provider'
-require 'models/location'
-require 'models/plan'
-require 'models/payor'
-require 'models/provider_record'
-require 'models/specialty'
+Dir[File.join("models", "**/*.rb")].each do |file_path|
+  require_relative file_path
+end
