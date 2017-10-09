@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170901172033) do
+ActiveRecord::Schema.define(version: 20171009171659) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "directories", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "short_name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_directories_on_name", unique: true
+    t.index ["short_name"], name: "index_directories_on_short_name", unique: true
+  end
 
   create_table "locations", force: :cascade do |t|
     t.integer "provider_id", null: false
@@ -53,7 +62,8 @@ ActiveRecord::Schema.define(version: 20170901172033) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "provider_id"
-    t.index ["first_name", "last_name", "payor_id"], name: "first_last_payor_id", unique: true
+    t.integer "directory_id"
+    t.index ["first_name", "last_name", "payor_id", "directory_id"], name: "first_last_payor_id_directory_id", unique: true
   end
 
   create_table "providers", force: :cascade do |t|
