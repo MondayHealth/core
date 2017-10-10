@@ -8,6 +8,10 @@
       "name": "Psychology Today",
       "short_name": "psych-today",
       "record_limit": 5580
+    },
+    {
+      "name": "GoodTherapy",
+      "short_name": "good-therapy"
     }
   ]
 }
