@@ -17,6 +17,7 @@ Dir[File.join("db/seed/directories", "*.json")].each do |file_path|
   data["directories"].each do |directory_data|
     directory = Directory.where(short_name: directory_data["short_name"]).first_or_initialize
     directory.name = directory_data["name"]
+    directory.record_limit = directory_data["record_limit"]
     directory.save!
   end
 end

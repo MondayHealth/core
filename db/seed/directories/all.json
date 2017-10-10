@@ -6,7 +6,8 @@
     },
     {
       "name": "Psychology Today",
-      "short_name": "psych-today"
+      "short_name": "psych-today",
+      "record_limit": 5580
     }
   ]
 }
