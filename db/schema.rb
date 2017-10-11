@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171010200301) do
+ActiveRecord::Schema.define(version: 20171011164322) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,6 +66,15 @@ ActiveRecord::Schema.define(version: 20171010200301) do
     t.integer "directory_id"
     t.string "certificate_number"
     t.boolean "certified"
+    t.integer "minimum_fee"
+    t.integer "maximum_fee"
+    t.boolean "sliding_scale"
+    t.boolean "free_consultation"
+    t.text "services"
+    t.text "languages"
+    t.text "modalities"
+    t.text "works_with_groups"
+    t.text "works_with_ages"
     t.index ["first_name", "last_name", "payor_id", "directory_id"], name: "first_last_payor_id_directory_id", unique: true
   end
 
