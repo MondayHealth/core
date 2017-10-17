@@ -1,0 +1,13 @@
+{
+  "name": "Oscar",
+  "plans": [
+    {
+      "name": "Individual",
+      "url": "https://www.hioscar.com/search/001/doctors?year=2017&planType=INDIVIDUAL"
+    },
+    {
+      "name": "Employee",
+      "url": "https://www.hioscar.com/search/005/doctors?year=2017&planType=O4B"
+    }
+  ]
+}
