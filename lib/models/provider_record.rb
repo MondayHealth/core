@@ -1,7 +1,7 @@
 class ProviderRecord < ActiveRecord::Base
   belongs_to :payor
-  belongs_to :provider
   belongs_to :directory
+  belongs_to :provider
 
   validates_presence_of :payor, unless: ->(pr) { pr.directory.present? }
   validates_presence_of :accepted_plan_ids, unless: -> (pr) { pr.directory.present? }
