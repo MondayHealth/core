@@ -1,0 +1,17 @@
+{
+  "name": "United",
+  "plans": [
+    {
+      "name": "Commercial",
+      "url": "https://provider.liveandworkwell.com/services/cliniciansSearch?state=NY&city=New%20York&radius=2"
+    },
+    {
+      "name": "Medicaid/Medi-Cal",
+      "url": "https://provider.liveandworkwell.com/services/cliniciansSearch?state=NY&city=New%20York&radius=2"
+    },
+    {
+      "name": "Medicare",
+      "url": "https://provider.liveandworkwell.com/services/cliniciansSearch?state=NY&city=New%20York&radius=2"
+    }
+  ]
+}
