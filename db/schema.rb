@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171017194951) do
+ActiveRecord::Schema.define(version: 20171019212036) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -79,6 +79,7 @@ ActiveRecord::Schema.define(version: 20171017194951) do
     t.text "website_url"
     t.text "accepted_payors"
     t.string "license_number"
+    t.boolean "accepting_new_patients"
     t.index ["first_name", "last_name", "payor_id", "directory_id"], name: "first_last_payor_id_directory_id", unique: true
   end
 
