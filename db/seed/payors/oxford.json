@@ -1,0 +1,21 @@
+{
+  "name": "Oxford",
+  "plans": [
+    {
+      "name": "Freedom",
+      "url": "https://connect.werally.com/plans/oxhp"
+    },
+    {
+      "name": "Garden State",
+      "url": "https://connect.werally.com/plans/oxhp"
+    },
+    {
+      "name": "Liberty",
+      "url": "https://connect.werally.com/plans/oxhp"
+    },
+    {
+      "name": "Metro",
+      "url": "https://connect.werally.com/plans/oxhp"
+    }
+  ]
+}
