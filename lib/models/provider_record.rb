@@ -10,5 +10,4 @@ class ProviderRecord < ActiveRecord::Base
   validates_presence_of :last_name
   validates_presence_of :license
   validates_presence_of :address
-  validates_presence_of :specialties
 end
