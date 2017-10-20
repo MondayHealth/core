@@ -3,19 +3,19 @@
   "plans": [
     {
       "name": "Freedom",
-      "url": "https://connect.werally.com/plans/oxhp"
+      "url": "https://connect.werally.com/rest/provider/v4/search/filtered?configuration=uhc.oxhp&includeAggregations=true&searchType=person&selectedLang=en&sort=uhpd&suppressType=virtualVisit&networks.medical=9749&from=0"
     },
     {
       "name": "Garden State",
-      "url": "https://connect.werally.com/plans/oxhp"
+      "url": "https://connect.werally.com/rest/provider/v4/search/filtered?configuration=uhc.oxhp&includeAggregations=true&searchType=person&selectedLang=en&sort=uhpd&suppressType=virtualVisit&networks.medical=9750&from=0"
     },
     {
       "name": "Liberty",
-      "url": "https://connect.werally.com/plans/oxhp"
+      "url": "https://connect.werally.com/rest/provider/v4/search/filtered?configuration=uhc.oxhp&includeAggregations=true&searchType=person&selectedLang=en&sort=uhpd&suppressType=virtualVisit&networks.medical=9751&from=0"
     },
     {
       "name": "Metro",
-      "url": "https://connect.werally.com/plans/oxhp"
+      "url": "https://connect.werally.com/rest/provider/v4/search/filtered?configuration=uhc.oxhp&includeAggregations=true&searchType=person&selectedLang=en&sort=uhpd&suppressType=virtualVisit&networks.medical=9754&from=0"
     }
   ]
 }
