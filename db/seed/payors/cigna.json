@@ -1,0 +1,17 @@
+{
+  "name": "Cigna",
+  "plans": [
+    {
+      "name": "CIGNA HealthCare of New York, Inc.",
+      "url": "https://hcpdirectory.cigna.com/web/public/providers"
+    },
+    {
+      "name": "PPO, Choice Fund PPO",
+      "url": "https://hcpdirectory.cigna.com/web/public/providers"
+    },
+    {
+      "name": "Open Access Plus, OA Plus, Choice Fund OA Plus",
+      "url": "https://hcpdirectory.cigna.com/web/public/providers"
+    }
+  ]
+}
