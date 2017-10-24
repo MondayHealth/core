@@ -1,0 +1,41 @@
+{
+  "name": "Empire",
+  "plans": [
+    {
+      "name": "NYSOH Marketplace Plans",
+      "url": "https://www.empireblue.com/health-insurance/provider-directory/searchcriteria?state=NY&brand=EBCBS"
+    },
+    {
+      "name": "Empire HMO Bronze",
+      "url": "https://www.empireblue.com/health-insurance/provider-directory/searchcriteria?state=NY&brand=EBCBS"
+    },
+    {
+      "name": "National PPO (BlueCard PPO Basic)",
+      "url": "https://www.empireblue.com/health-insurance/provider-directory/searchcriteria?state=NY&brand=EBCBS"
+    },
+    {
+      "name": "Empire Bronze Blue Priority EPO",
+      "url": "https://www.empireblue.com/health-insurance/provider-directory/searchcriteria?state=NY&brand=EBCBS"
+    },
+    {
+      "name": "Empire Bronze Pathway HMO",
+      "url": "https://www.empireblue.com/health-insurance/provider-directory/searchcriteria?state=NY&brand=EBCBS"
+    },
+    {
+      "name": "Blue Medicare Advantage (PPO)",
+      "url": "https://www.empireblue.com/health-insurance/provider-directory/searchcriteria?state=NY&brand=EBCBS"
+    },
+    {
+      "name": "Empire MediBlue (HMO)",
+      "url": "https://www.empireblue.com/health-insurance/provider-directory/searchcriteria?state=NY&brand=EBCBS"
+    },
+    {
+      "name": "NY Medicaid",
+      "url": "https://www.empireblue.com/health-insurance/provider-directory/searchcriteria?state=NY&brand=EBCBS"
+    },
+    {
+      "name": "Federal Employee Program",
+      "url": "https://www.empireblue.com/health-insurance/provider-directory/searchcriteria?state=NY&brand=EBCBS"
+    }
+  ]
+}
