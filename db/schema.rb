@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171031202517) do
+ActiveRecord::Schema.define(version: 20171031211757) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 20171031202517) do
     t.integer "payor_id", null: false
     t.string "name", null: false
     t.text "url", null: false
-    t.integer "record_limit", null: false
+    t.integer "record_limit"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["payor_id", "name"], name: "index_plans_on_payor_id_and_name", unique: true
