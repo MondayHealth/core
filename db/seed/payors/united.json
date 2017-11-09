@@ -7,11 +7,11 @@
     },
     {
       "name": "Medicaid/Medi-Cal",
-      "url": "https://provider.liveandworkwell.com/services/cliniciansSearch?state=NY&city=New%20York&radius=2"
+      "url": "https://provider.liveandworkwell.com/services/cliniciansSearch?state=NY&city=New%20York&radius=1&networks=NYMEDICAID"
     },
     {
       "name": "Medicare",
-      "url": "https://provider.liveandworkwell.com/services/cliniciansSearch?state=NY&city=New%20York&radius=2"
+      "url": "https://provider.liveandworkwell.com/services/cliniciansSearch?state=NY&city=New%20York&radius=2networks=MEDICARE"
     }
   ]
 }
