@@ -8,6 +8,7 @@ Dir[File.join("db/seed/payors", "*.json")].each do |file_path|
     plan = payor.plans.where(name: plan_data["name"]).first_or_initialize
     plan.url = plan_data["url"]
     plan.record_limit = plan_data["record_limit"]
+    plan.original_code = plan_data["original_code"]
     plan.save!
   end
 end
