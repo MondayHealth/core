@@ -3,7 +3,7 @@
   "plans": [
     {
       "name": "Commercial",
-      "url": "https://provider.liveandworkwell.com/services/cliniciansSearch?state=NY&city=New%20York&radius=2"
+      "url": "https://connect.werally.com/rest/provider/v4/search/filtered?configuration=uhc&includeAggregations=true&networks.behavioral=800482d204e04b3d990455fae08bd0d7ac5f806b&searchType=person&selectedLang=en&sort=distance&suppressType=virtualVisit&from=0"
     },
     {
       "name": "Medicaid/Medi-Cal",
