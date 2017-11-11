@@ -11,7 +11,7 @@
     },
     {
       "name": "Medicare",
-      "url": "https://provider.liveandworkwell.com/services/cliniciansSearch?state=NY&city=New%20York&radius=2networks=MEDICARE"
+      "url": "https://provider.liveandworkwell.com/services/cliniciansSearch?state=NY&city=New%20York&radius=2&networks=MEDICARE"
     }
   ]
 }
