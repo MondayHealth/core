@@ -3,42 +3,42 @@
   "plans": [
     {
       "name": "BlueCard PPO/EPO",
-      "url": "https://provider.bcbs.com/app/public/",
+      "url": "https://provider.bcbs.com/app/public/#/one/city=&state=&postalCode=&country=&insurerCode=BCBSA_I&brandCode=BCBSANDHF",
       "original_code": "BCBSAPPO"
     },
     {
       "name": "BlueCard PPO Basic",
-      "url": "https://provider.bcbs.com/app/public/",
+      "url": "https://provider.bcbs.com/app/public/#/one/city=&state=&postalCode=&country=&insurerCode=BCBSA_I&brandCode=BCBSANDHF",
       "original_code": "BCBSABASIC"
     },
     {
       "name": "BlueCard Traditional",
-      "url": "https://provider.bcbs.com/app/public/",
+      "url": "https://provider.bcbs.com/app/public/#/one/city=&state=&postalCode=&country=&insurerCode=BCBSA_I&brandCode=BCBSANDHF",
       "original_code": "BCBSAPAR"
     },
     {
       "name": "Medicare Advantage PPO: New York, BlueCross & BlueShield of Western",
-      "url": "https://provider.bcbs.com/app/public/",
+      "url": "https://provider.bcbs.com/app/public/#/one/city=&state=&postalCode=&country=&insurerCode=BCBSA_I&brandCode=BCBSANDHF",
       "original_code": "NYNY8M"
     },
     {
       "name": "Medicare Advantage PPO: New York, BlueShield of Northeastern",
-      "url": "https://provider.bcbs.com/app/public/",
+      "url": "https://provider.bcbs.com/app/public/#/one/city=&state=&postalCode=&country=&insurerCode=BCBSA_I&brandCode=BCBSANDHF",
       "original_code": "NYNY0M"
     },
     {
       "name": "Medicare Advantage PPO: New York, Empire Blue Cross Blue Shield",
-      "url": "https://provider.bcbs.com/app/public/",
+      "url": "https://provider.bcbs.com/app/public/#/one/city=&state=&postalCode=&country=&insurerCode=BCBSA_I&brandCode=BCBSANDHF",
       "original_code": "NYNYM2"
     },
     {
       "name": "Medicare Advantage PPO: New York, Excellus Blue Cross Blue Shield",
-      "url": "https://provider.bcbs.com/app/public/",
+      "url": "https://provider.bcbs.com/app/public/#/one/city=&state=&postalCode=&country=&insurerCode=BCBSA_I&brandCode=BCBSANDHF",
       "original_code": "NYNYM3"
     },
     {
       "name": "Federal Employee Program",
-      "url": "https://provider.fepblue.org/app/public/",
+      "url": "https://provider.fepblue.org/app/public/#/one/city=&state=&postalCode=&country=&insurerCode=BCBSA_I&brandCode=BCBSAFEP",
       "original_code": ""
     }
   ]
